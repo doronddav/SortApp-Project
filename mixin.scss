@@ -1,0 +1,16 @@
+@mixin smallScreenCpomputer {
+  @media (max-width: 1255px) {
+    @content;
+  }
+}
+@mixin phone-screen {
+  @media (max-width: 740px) {
+    @content;
+  }
+}
+
+@mixin mimi-phone-screen {
+  @media (max-width: 483px) {
+    @content;
+  }
+}

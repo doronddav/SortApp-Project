@@ -1,0 +1,106 @@
+@import "./mixin.scss";
+$text-color: rgb(170, 170, 165);
+$big-label-text: 2.5rem;
+$small-labal-text: 1rem;
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(90, 90, 90);
+}
+.main-box {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  place-items: center;
+
+  flex-direction: column;
+  margin-top: 1rem;
+  @include mimi-phone-screen {
+    place-items: flex-start;
+  }
+  .top-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 0rem;
+    border: 1px solid #3bf602;
+    width: 45rem;
+    height: 23rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 7rem;
+    @include phone-screen {
+      width: 30rem;
+      height: 19rem;
+    }
+    @include mimi-phone-screen {
+      width: 37rem;
+      height: 19rem;
+    }
+  }
+}
+
+.textbox {
+  border: 0.1rem solid black;
+}
+.labeltext {
+  color: $text-color;
+  font-size: $big-label-text;
+  align-self: center;
+  @include phone-screen {
+    font-size: $small-labal-text;
+  }
+}
+.btn-div {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.btn {
+  height: 3rem;
+  width: 6rem;
+  place-self: center;
+  border: 0.2rem black dotted;
+  border-radius: 1rem;
+}
+.range {
+  width: 21rem;
+}
+p {
+  font-size: $big-label-text;
+  color: $text-color;
+  align-self: center;
+  margin: 0.2rem;
+  @include phone-screen {
+    font-size: $small-labal-text;
+  }
+}
+
+.output {
+  width: 80rem;
+  height: 30rem;
+  position: absolute;
+  top: 25rem;
+  @include smallScreenCpomputer {
+    width: 50rem;
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    @include smallScreenCpomputer {
+      font-size: 1rem;
+    }
+  }
+}

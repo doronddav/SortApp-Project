@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>sortingApp</title>
+  </head>
+  <body>
+    <div class="main-box">
+      <div class="top-box">
+        <label for="array" class="labeltext"> Write numbers</label>
+        <input type="text" id="userNum" name="array" class="textbox" />
+        <button id="userNumBtn" class="btn">Add my numbers</button>
+        <label for="array" class="labeltext">
+          choose amout of numbers to sort</label
+        >
+        <input
+          type="range"
+          id="numbersforsort"
+          class="range"
+          name="rangofnumbers"
+          min="1"
+          max="50"
+        />
+        <p class="displaynumbers"></p>
+        <div class="btn-div">
+          <button class="btn BtnAdd">Add random numbers</button>
+          <input type="submit" value="Sort" class="btn BtnSort" id="BtnSort" />
+          <button class="btn groupSortBtn">group sorting</button>
+          <button class="btn Btn-clear">Clear</button>
+        </div>
+      </div>
+      <div class="output">
+        <p class="display-array"></p>
+        <p class="display-sort"></p>
+        <p class="display-first-groupt"></p>
+        <p class="display-second-groupt"></p>
+        <p class="display-third-sort"></p>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
