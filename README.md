@@ -15,7 +15,8 @@ the sorting will be by bubbleSort
       }
     }
   }
-};```
+}; 
+```
 
  
 ## How to use the Project
