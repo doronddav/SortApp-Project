@@ -25,7 +25,7 @@ there are two adding buttons.
 there is a button for the sort and another one if the user want to sort theme to gouops (0-30/   31-60  /61-100)
 by button Clear the user can start over sorting and clear data.
 
-for this project to have to use ```live-server`` on terminal and use sass extension("Live Sass Compiler")
+for this project to have to use ``` live-server ``` on terminal and use sass extension("Live Sass Compiler")
 
 
 
